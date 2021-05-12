@@ -4,6 +4,18 @@
     padding: 0;
 }
 
+
+/* CLASS UTILITY */
+.text-color-white{
+    color: white;
+}
+
+.text-color-grey{
+    color: grey;
+}
+/* END CLASS UTILITY */
+
+
 .container-fluid{
     width: 100%;
     height: 100vh;
@@ -13,11 +25,18 @@
     width: 100%;
     height: calc(100vh - 90px);
     background-color: lightcyan;
+    /* z-index: 2; */
 }
 
 
 .side-bar{
     background-color: lightgreen;
+    height: 100%;
+}
+
+.side-bar-content{
+    height: 100%;
+    overflow-y: hidden;
 }
 
 .content{
@@ -36,12 +55,94 @@
 .container-content{
     height: 200vh;
     background-color: blue;
-    margin: 20px;
+    margin: 100px 20px 20px 20px;
 }
 
 .footer{
     width: 100%;
     height: 90px;
-    background-color: lightslategray;
+    background-color: #282828;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* z-index: 1; */
 }
 
+.item-footer:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.img-footer{
+    width: 60px;
+    height: 60px;
+    margin: 0 5px 0 10px;
+}
+
+.desc-footer-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    justify-content: space-around;
+    align-items: center;
+}
+
+i{
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.item-footer:nth-child(2){
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.item-footer-central-buttons{
+    justify-content: center;
+}
+
+.items-footer-central-music-bar{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.music-bar{
+    max-width: 300px;
+    height: 5px;
+    background-color: grey;
+    margin: 0 25px;
+    flex-grow: 1;
+}
+
+.music-bar-white{
+    width: 80px;
+    height: 5px;
+    background-color: white;
+    flex-grow: 1;
+}
+
+.item-footer:last-child{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.music-bar-item-footer-right{
+    width: 100px;
+    height: 5px;
+    background-color: grey;
+    margin-right: 10px;
+}
+
+.music-bar-white-item-footer-right{
+    width: 20px;
+    height: 5px;
+    background-color: white;
+}
+
+.item-footer:last-child > i{
+    /* padding-bottom: 10px; */
+}
