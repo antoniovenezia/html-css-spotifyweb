@@ -22,6 +22,8 @@
 
 .content{
     background-color: lightsalmon;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .topbar-fixed{
@@ -32,8 +34,9 @@
 }
 
 .container-content{
-    height: 100%;
-    overflow-y: scroll;
+    height: 200vh;
+    background-color: blue;
+    margin: 20px;
 }
 
 .footer{
