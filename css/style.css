@@ -25,23 +25,45 @@
     width: 100%;
     height: calc(100vh - 90px);
     background-color: lightcyan;
-    /* z-index: 2; */
 }
 
 
 .side-bar{
-    background-color: lightgreen;
+    background-color: black;
     height: 100%;
 }
 
 .side-bar-content{
     height: 100%;
     overflow-y: hidden;
+    padding: 10px 0 0 10px;
+    /* line-height: 40px; */
+    /* font-size: 10px; */
+}
+
+.logo{
+    width: 200px;
+    margin-bottom: 20px;
 }
 
 .content{
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: hidden;
+}
+
+.content i{
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.plus-sidebar{
+    font-size: 30px;
+}
+
+.nome-playlist{
+    font-size: 18px;
+    line-height: 40px;
 }
 
 .topbar-fixed{
@@ -59,8 +81,6 @@
     border: 1px solid white;
     border-radius: 20px;
     padding: 5px 10px;
-    /* position: absolute; */
-    /* right: 10px; */
 }
 
 .container-content{
@@ -76,13 +96,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* z-index: 1; */
 }
 
 .item-footer:first-child{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .img-footer{
@@ -110,6 +130,7 @@ i{
 .item-footer:nth-child(2){
     flex-direction: column;
     flex-grow: 1;
+    flex-wrap: nowrap;
 }
 
 .item-footer-central-buttons{
@@ -140,6 +161,7 @@ i{
 .item-footer:last-child{
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .music-bar-item-footer-right{
@@ -153,8 +175,4 @@ i{
     width: 20px;
     height: 5px;
     background-color: white;
-}
-
-.item-footer:last-child > i{
-    /* padding-bottom: 10px; */
 }
