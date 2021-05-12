@@ -40,16 +40,27 @@
 }
 
 .content{
-    background-color: lightsalmon;
     height: 100%;
     overflow-y: scroll;
 }
 
 .topbar-fixed{
+    opacity: 0.9;
     width: 100%;
     height: 80px;
     position: fixed;
-    background-color: maroon;
+    background-color: hsl(222deg 38% 5%);
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.button-topbar{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    /* position: absolute; */
+    /* right: 10px; */
 }
 
 .container-content{
@@ -83,6 +94,7 @@
 .desc-footer-left{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .icon{
