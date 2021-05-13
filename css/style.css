@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /* CLASS UTILITY */
 .text-color-white{
@@ -31,14 +35,10 @@
 .side-bar{
     background-color: black;
     height: 100%;
-}
-
-.side-bar-content{
-    height: 100%;
-    overflow-y: hidden;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 10px 0 0 10px;
-    /* line-height: 40px; */
-    /* font-size: 10px; */
+    overflow: hidden;
 }
 
 .logo{
@@ -46,24 +46,54 @@
     margin-bottom: 20px;
 }
 
+.sidebar-content, .sidebar-footer{
+    /* flex-direction: column; */
+    line-height: 30px;
+    /* width: 100%; */
+}
+
+.sidebar-content-top{
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.sidebar-content-top i{
+    font-size: 20px;
+}
+
+.playlist{
+    /* height: 280px; */
+    min-height: 280px; /*30%*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* overflow-y: scroll; */
+}
+
+.sidebar-content span, ul.text-color-grey li{
+    font-size: 15px;
+}
+
+.text-plus{
+    align-items: center;
+}
+
+.icon-plus-sidebar{
+    font-size: 40px;
+}
+
+.sidebar-footer .hr{
+    width: 90%;
+    height: 1px;
+    background-color: grey;
+}
+
+
+
+
+
 .content{
     height: 100%;
-    overflow-y: hidden;
-}
-
-.content i{
-    font-size: 20px;
-    margin-bottom: 10px;
-    display: block;
-}
-
-.plus-sidebar{
-    font-size: 30px;
-}
-
-.nome-playlist{
-    font-size: 18px;
-    line-height: 40px;
+    overflow-y: scroll;
 }
 
 .topbar-fixed{
@@ -84,10 +114,38 @@
 }
 
 .container-content{
+    /* width: 100%; */
     height: 200vh;
     background-color: blue;
     margin: 100px 20px 20px 20px;
 }
+
+.container-content ul{
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container-content ul li{
+    margin-left: 20px;
+}
+
+.container-content ul li:first-child{
+    border-bottom: 2px solid chartreuse;
+}
+
+
+.row-films{
+    flex-wrap: nowrap;
+}
+
+.film-content{
+    text-align: center;
+}
+
+
+
+
 
 .footer{
     width: 100%;

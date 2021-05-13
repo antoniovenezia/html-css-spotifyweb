@@ -1,0 +1,41 @@
+.side-bar{
+    background-color: black;
+    height: 100%;
+}
+
+.side-bar-content{
+    height: 100%;
+    overflow-y: hidden;
+    padding: 10px 0 0 10px;
+    /* line-height: 40px; */
+    /* font-size: 10px; */
+}
+
+.logo{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.content{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.side-bar-content i{
+    font-size: 17px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.side-bar-footer{
+
+}
+
+/* .plus-sidebar{
+    size: 20px;
+} */
+
+.nome-playlist{
+    font-size: 17px;
+    line-height: 40px;
+}

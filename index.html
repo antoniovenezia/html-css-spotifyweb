@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify WEB</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool-responsive.css">
@@ -17,39 +19,108 @@
     <div class="container-fluid">
 
         <div class="main row">
-            <div class="side-bar col-xs-1 col-md-2">
-                <div class="side-bar-content">
-                    <div class="content">
-                        <img class="logo" src="img/logo.svg" alt="">
-                        <div class="home-sidebar">
-                            <i class="fas fa-home text-color-white">Home</i>
-                            <i class="fas fa-search text-color-grey">Cerca</i>
-                            <i class="fas fa-book-open text-color-grey">La tua libreria</i>
+            <div class="side-bar col-xs-1 col-md-2 row">
+                <div class="row sidebar-content">
+                    <img class="logo" src="img/logo.svg" alt="">
+                    <div class="sidebar-content-top">
+                        <div>
+                            <i class="fas fa-home text-color-white"></i>
+                            <span class="text-color-white">Home</span>
                         </div>
-                        <h3 class="playlist-sidebar" class="text-color-white">PLAYLIST</h3>
-                        <div class="plus-sidebar">
-                            <i class="fas fa-plus-square text-color-grey"> Crea Playlist</i>
+                        <div>
+                            <i class="fas fa-search text-color-grey"></i>
+                            <span class="text-color-grey">Cerca</span>
                         </div>
-                        <div class="nome-playlist">
-                            <div class="text-color-grey">Nome Playlist</div>
-                            <div class="text-color-grey">Nome Playlist</div>
-                            <div class="text-color-grey">Nome Playlist</div>
-                            <div class="text-color-grey">Nome Playlist</div>
-                            <div class="text-color-grey">Nome Playlist</div>
-                            <div class="text-color-grey">Nome Playlist</div>
+                        <div>
+                            <i class="fas fa-book-open text-color-grey"></i>
+                            <span class="text-color-grey">La tua libreria</span>
                         </div>
-                    
+                    </div>
+                    <div class="playlist">
+                        <div class="text-color-white">PLAYLIST</div>
+                        <div class="text-plus row">
+                            <i class="icon-plus-sidebar fas fa-plus-square text-color-grey"></i>
+                            <span class="text-color-grey">Crea Playlist</span>
+                        </div>
+                        <ul class="text-color-grey">
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar-footer row">
+                    <div>
+                        <i class="fas fa-arrow-circle-down text-color-grey"></i>
+                        <span class="text-color-grey">Installa App</span>
+                    </div>
+                    <div class="hr"></div>
+                    <div>
+                        <i class="fas fa-user-circle text-color-white"></i>
+                        <span class="text-color-white">John Doe</span>
                     </div>
 
-                    
                 </div>
+
             </div>
 
             <div class="content col-xs-11 col-md-10">
+
                 <div class="topbar-fixed row col-xs-11 col-md-10">
                     <div class="button-topbar text-color-white">EFFETTUA L'UPGRADE</div>
                 </div>
-                <div class="container-content"></div>
+
+                <div class="container-content">
+                    <ul class="row text-color-grey">
+                        <li> IN EVIDENZA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
+                    </ul>
+                    <h3 class="text-color-white">Recently played</h3>
+                    <div class="row row-films">
+                        <div class="film-content">
+                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="text-color-white">Heavy Metal</div>
+                            <div class="text-color-grey">Subtitle</div>
+                        </div>
+                        <div class="film-content">
+                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="text-color-white">Heavy Metal</div>
+                            <div class="text-color-grey">Subtitle</div>
+                        </div>
+                        <div class="film-content">
+                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="text-color-white">Heavy Metal</div>
+                            <div class="text-color-grey">Subtitle</div>
+                        </div>
+                        <div class="film-content">
+                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="text-color-white">Heavy Metal</div>
+                            <div class="text-color-grey">Subtitle</div>
+                        </div>
+                        <div class="film-content">
+                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="text-color-white">Heavy Metal</div>
+                            <div class="text-color-grey">Subtitle</div>
+                        </div>
+                        <div class="film-content">
+                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="text-color-white">Heavy Metal</div>
+                            <div class="text-color-grey">Subtitle</div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
             </div>
         </div>
 
