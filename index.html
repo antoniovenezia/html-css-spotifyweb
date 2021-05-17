@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify WEB</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool-responsive.css">
@@ -20,7 +19,8 @@
 
         <div class="main row">
             <div class="side-bar col-xs-1 col-md-2 row">
-                <div class="row sidebar-content">
+
+                <div class="sidebar-content">
                     <img class="logo" src="img/logo.svg" alt="">
                     <div class="sidebar-content-top">
                         <div>
@@ -42,7 +42,7 @@
                             <i class="icon-plus-sidebar fas fa-plus-square text-color-grey"></i>
                             <span class="text-color-grey">Crea Playlist</span>
                         </div>
-                        <ul class="text-color-grey">
+                        <ul class="text-color-grey-list">
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
@@ -76,7 +76,7 @@
                 </div>
 
                 <div class="container-content">
-                    <ul class="row text-color-grey">
+                    <ul class="row text-color-grey-list">
                         <li> IN EVIDENZA</li>
                         <li>PODCAST</li>
                         <li>CLASSIFICHE</li>
@@ -84,54 +84,151 @@
                         <li>NUOVE USCITE</li>
                         <li>SCOPRI</li>
                     </ul>
-                    <h3 class="text-color-white">Recently played</h3>
-                    <div class="row row-films">
-                        <div class="film-item row">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <div class="text-color-white">Heavy Metal</div>
-                            <div class="text-color-grey">Subtitle</div>
-                        </div>
-                        <div class="film-item row">
-                            <img src="img/stranger.jpeg" alt="">
-                            <div class="text-color-white">Stranger Things</div><!-- , Vol.1 (a Netflix Original Series Soundtrack)-->
-                            <div class="text-color-grey">Kyle Dixon & Michael Stein</div>
-                        </div>
-                        <div class="film-item row">
-                            <img src="img/aquietplace.jpeg" alt="">
-                            <div class="text-color-white">A quiet place</div>
-                            <div class="text-color-grey">Subtitle</div>
-                        </div>
-                        <div class="film-item row">
-                            <img src="img/split.jpeg" alt="">
-                            <div class="text-color-white">Split</div>
-                            <div class="text-color-grey">Subtitle</div>
-                        </div>
-                        <div class="film-item row">
-                            <img src="img/cure.jpeg" alt="">
-                            <div class="text-color-white">A cure for wellness</div>
-                            <div class="text-color-grey">Subtitle</div>
-                        </div>
-                        <div class="film-item row">
-                            <img src="img/sinister.jpeg" alt="">
-                            <div class="text-color-white">Sinister</div>
-                            <div class="text-color-grey">Subtitle</div>
-                        </div>
-                        
+
+                    <div class="title-content">
+                        <h3 class="text-color-white">Recently played</h3>
                     </div>
 
-                    <div class="text-color-white">Creato per John Doe</div>
-                    <div class="text-color-grey">Più ascolti, più accurati saranno i suggerimenti</div>
-                    
-                    <div class="row row-dailymix">
-                        <div class="film-item row">
-                            <img src="img/radar.jpeg" alt="">
-                            <div class="text-color-white">Release Radar</div>
+                    <div class="container-songs">
+                        <div class="song">
+                            <div class="img-song">
+                                <img src="img/metal_lifting.jpg" alt="">
+                                <div class="icon-play">
+                                    <i class="text-color-white far fa-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="description-img">
+                                <h3 class="text-color-white">Heavy Metal</h3>
+                                <div class="text-color-grey">Subtitle</div>
+                            </div>
                         </div>
-                        <div class="film-item row">
-                            <img src="img/mixdaily.jpeg" alt="">
-                            <div class="text-color-white">Daily Mix 1</div>
+                        <div class="song">
+                            <div class="img-song">
+                                <img src="img/stranger.jpeg" alt="">
+                                <div class="icon-play">
+                                    <i class="text-color-white far fa-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="description-img">
+                                <h3 class="text-color-white">Stranger Things, Vol.1 (a Netflix Original Series
+                                    Soundtrack)</h3>
+                                <div class="text-color-grey">Kyle Dixon & Michael Stein</div>
+                            </div>
+                        </div>
+                        <div class="song">
+                            <div class="img-song">
+                                <img src="img/aquietplace.jpeg" alt="">
+                                <div class="icon-play">
+                                    <i class="text-color-white far fa-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="description-img">
+                                <h3 class="text-color-white">A quiet place</h3>
+                                <div class="text-color-grey">Subtitle</div>
+                            </div>
+                        </div>
+                        <div class="song">
+                            <div class="img-song">
+                                <img src="img/split.jpeg" alt="">
+                                <div class="icon-play">
+                                    <i class="text-color-white far fa-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="description-img">
+                                <h3 class="text-color-white">Split</h3>
+                                <div class="text-color-grey">Subtitle</div>
+                            </div>
+                        </div>
+                        <div class="song">
+                            <div class="img-song">
+                                <img src="img/cure.jpeg" alt="">
+                                <div class="icon-play">
+                                    <i class="text-color-white far fa-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="description-img">
+                                <h3 class="text-color-white">A cure for wellness/h3>
+                                    <div class="text-color-grey">Subtitle</div>
+                            </div>
+                        </div>
+                        <div class="song">
+                            <div class="img-song">
+                                <img src="img/sinister.jpeg" alt="">
+                                <div class="icon-play">
+                                    <i class="text-color-white far fa-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="description-img">
+                                <h3 class="text-color-white">Sinister</h3>
+                                <div class="text-color-grey">Subtitle</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="title-content">
+                        <h3 class="text-color-white">Creato per John Doe</h3>
+                        <div class="text-color-grey">Più ascolti, più accurati saranno i suggerimenti</div>
+                    </div>
+
+                    <div class="container-songs">
+                        <div class="song">
+                            <div class="img-song">
+                                <img src="img/radar.jpeg" alt="">
+                                <div class="icon-play">
+                                    <i class="text-color-white far fa-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="description-img">
+                                <h3 class="text-color-white">Realease Radar</h3>
+                            </div>
+                        </div>
+                        <div class="song">
+                            <div class="img-song">
+                                <img src="img/mixdaily.jpeg" alt="">
+                                <div class="icon-play">
+                                    <i class="text-color-white far fa-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="description-img">
+                                <h3 class="text-color-white">Daily Mix 1</h3>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="title-content">
+                        <h3 class="text-color-white">Artisti più popolari</h3>
+                        <div class="text-color-grey">Più ascolti, più accurati saranno i suggerimenti</div>
+                    </div>
+
+                    <div class="container-songs">
+                        <div class="song">
+                            <div class="img-song img-radius">
+                                <img src="img/youg.jpeg" alt="">
+                                <div class="icon-play">
+                                    <i class="text-color-white far fa-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="description-img">
+                                <h3 class="text-color-white">Release Radar</h3>
+                            </div>
+                        </div>
+                        <div class="song">
+                            <div class="img-song img-radius">
+                                <img src="img/einaudi.jpeg" alt="">
+                                <div class="icon-play">
+                                    <i class="text-color-white far fa-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="description-img">
+                                <h3 class="text-color-white">Daily Mix 1</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
                 </div>
 
@@ -163,7 +260,9 @@
                 <div class="item-footer-central-buttons row">
                     <i class="fas fa-random text-color-white"></i>
                     <i class="far fa-caret-square-left text-color-white"></i>
-                    <i class="far fa-play-circle text-color-white"></i>
+                    <div class="play">
+                        <i class="far fa-play-circle text-color-white"></i>
+                    </div>
                     <i class="far fa-caret-square-right text-color-white"></i>
                     <i class="fas fa-undo-alt text-color-white"></i>
                 </div>
@@ -172,6 +271,7 @@
                     <div>0:25</div>
                     <div class="music-bar">
                         <div class="music-bar-white"></div>
+                        <div class="circle-bar"></div>
                     </div>
                     <div>4:35</div>
                 </div>
