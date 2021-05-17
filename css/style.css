@@ -331,9 +331,10 @@ i{
     display: inline;
 }
 
-.icon-play:hover{
+.song:hover .icon-play{
     opacity: 1;
 }
+
 
 
 /* MEDIA QUERY */
