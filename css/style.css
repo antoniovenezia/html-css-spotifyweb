@@ -43,6 +43,7 @@ body{
     justify-content: space-between;
     padding: 10px 0 0 10px;
     overflow: hidden;
+    width: 255px;
 }
 
 .logo{
@@ -52,6 +53,7 @@ body{
 
 .content{
     flex-grow: 1;
+    width: calc(100% - 255px);
 }
 
 .sidebar-content {
@@ -61,9 +63,7 @@ body{
 }
 
 .sidebar-content, .sidebar-footer{
-    /* flex-direction: column; */
     line-height: 35px;
-    /* width: 100%; */
 }
 
 .sidebar-content-top{
@@ -71,12 +71,7 @@ body{
     align-items: center;
 }
 
-.sidebar-content-top i{
-    /* font-size: 15px; */
-}
-
 .playlist{
-    /* height: 280px; */
     flex-grow: 1;
     overflow-y: auto;
 }
@@ -117,6 +112,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
+    z-index: 1;
 }
 
 .button-topbar{
@@ -127,9 +123,6 @@ body{
 
 .container-content{
     width: 100%;
-    /* height: 100vh; */
-    /* background-color: blue; */
-    /* margin: 100px 20px 20px 20px; */
     margin-top: 100px;
     padding-left: 15px;
 }
@@ -156,7 +149,6 @@ body{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    /* padding-left: 15px; */
 }
 
 .song{
@@ -164,9 +156,6 @@ body{
     margin-right: 15px;
     margin-top: 30px;
     margin-bottom: 20px;
-    /* background-color: red; */
-    /* border: 1px solid white; */
-    /* height: 100px; */
 }
 
 .img-song img{
@@ -217,6 +206,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .item-footer:first-child{
@@ -227,8 +217,8 @@ body{
 }
 
 .img-footer{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     margin: 0 5px 0 10px;
 }
 
@@ -269,7 +259,7 @@ i{
     max-width: 300px;
     height: 5px;
     background-color: grey;
-    margin: 0 25px;
+    margin: 0 15px;
     flex-grow: 1;
     position: relative;
 }
@@ -313,9 +303,8 @@ i{
 }
 
 
+
 /* HOVER */
-
-
 .button-topbar:hover{
     font-size: 20px;
 }
@@ -348,10 +337,16 @@ i{
         display: none;
     }
     .logo{
-        width: 108px;
+        width: 115px;
     }
     i.fa-home, i.fa-search, i.fa-book-open{
         font-size: 25px;
+    }
+    .side-bar{
+        width: 50px;
+    }
+    .content{
+        width: calc(100% - 50px);
     }
 }
 
